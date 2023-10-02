@@ -1,0 +1,177 @@
+==> The linked list is a type of data structure that can stored indefinite amount of elements.Each elements in linked
+    list is linked by via a link called pointer.
+*********************************************************************************************************************                          
+==> There are 3 types of linked lists such as : 
+-   Single linked list : it has the only one direction of pointer that point to the addresse of next elements but not 
+                         go feedback.
+-   Double linked list : it has two directions of pointer that first one point to the addresse of next element and 
+                         Second point feedback to current element. 
+-   Circular linked list: it has the circular direction that start from first and point to next then until the last
+                          one it will point to the first element again.
+*********************************************************************************************************************                          
+==> The Differents of Array Vs Linked-List such as :
++ Array :                                                   + Linked List :
+-   Limited size(static)                                    -   Unlimited size(dynamic)
+-   Data can be accessed randomly                           -   Data can be accessed from head or tail
+-   Alocate memory at compiled time                         -   Allocate memory at run time 
+-   Memory utilisation is inefficient                       -   Memory utilisation is efficient
+-   fast accessing                                          -   new element is created dynamically at the run time.
+*********************************************************************************************************************                          
+==> The Basic operation of linked list such as :
+-   Insertion : insert data at the begin or at the end or middle or another specific positions of list.
+-   Deletion  : delete data from the begin or at the end or middle or another specific positions of list.
+-   Searching : search an element using the given data.
+-   Display   : display the completed list.
+*********************************************************************************************************************                          
+==> Linked List contains : data and pointer.
+-   successor   : use to point to the next element.
+-   predecessor : use to point its previous element.
+*********************************************************************************************************************                          
+==> How to create an Empty List :
+-   create a list variable
+-   allocate memory
+-   set n=0 since we are creating an empty list
+-   Head point to NULL
+-   Tail point to NULL
+++ To accessing to structure of data(no pointer) we use dot(.)
+++ To accessing to structure of data(pointer) we use (->)
+For giving example :
+                struct element{
+                        int data;
+                        element *next;
+                    }
+                struct list{
+                        int n;
+                        element* head;
+                        element* tail;
+                    }
+                void CreateAnEmptyList(){
+                        list* ls;       // it mean that we create a list variable.
+                        ls = new list(); // it mean that we allocate memory.
+                        ls->head=NULL;//  it mean that list point or access to head or tail and head or tail point to 0.
+                        ls->tail=NULL;
+                        ls->n=0;
+                        return ls;
+                    }
+*********************************************************************************************************************                          
+==> How to add element into begining of the list :
+-   Create a new element E
+-   Connect E point to head
+-   Update head(E now is head)
+-   Update tail if need
+-   Increase n by 1(n is the number of element in list)
+For example : 
+                void addBeginList(list *ls, int newdata){
+                //create new element:
+                    element *e;
+                    e = new element();
+                    e->data->newdata; 
+                // Update pointer head or tail.
+                    e->next = ls->head;
+                    ls->head = e;
+                    if(ls->n==0){
+                        ls->tail=e;
+                    }
+                    ls -> n = ls->n+1;
+                }
+
+
+struct element{
+    int data;
+    element *next;
+};
+struct list{
+    int n;
+    element *tail;
+    element *head;
+};
+list *CreateAnEmptyList(){
+    list *ls;
+    ls = new list();
+    if(ls->n==0){
+    ls->tail=NULL;
+    ls->head=NULL;
+    return ls;
+    }
+    else{
+        ls->head =e;
+        ls->tail = e;
+        e->next = ls->NULL;
+        
+    }
+void addBeginList(list *ls, int newdata){
+    element *e;
+    e = new element;
+    e->data = newdata;
+    if(ls->n==0){
+        ls->head=e;
+        ls->tail=e;
+        e->next=NULL;
+    }
+    else{
+        e->next=ls->head;
+        ls->head = e;
+    }
+    ls->n = ls->n+1;
+}
+
+
+
+
+
+
+
+void addBeginList(list *ls, int newdata){
+    element *e;
+    e = new element;
+    e->data = newdata;
+    if(ls->n==0){
+        ls->head = e;
+        ls->tail = e;
+        e->next = NULL;
+    }
+    else{
+        e->next=ls->tail;
+        ls->head = e;
+    }    
+    ls->n = ls->n+1;
+}
+
+
+
+
+
+
+
+void addBeginList(){
+    list *ls;
+    int newdata;
+    element *e;
+    e = new element;
+    e->data = newdata;
+    if(ls->n==0){
+        ls->head = e;
+        ls->tail = e;
+        e->next = NULL;
+    }
+    else{
+        ls->
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

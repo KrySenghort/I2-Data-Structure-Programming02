@@ -1,0 +1,46 @@
+-   Recursive function is a function that called itself repeatitively until condition is satisfied.
+-   There are two types of functions such as :
+        +   standard library function
+            Ex: <stdio.h>  provide functions : scanf() , printf()
+        +   user defined function 
+            Ex: <math.h>   provide functions : pow(), sqrt(), ceil(), floor(), cos(), sin(),.......
+There are two types of recursive functions :
+-   Direct recursion : is the function that calls itself just like we saw in the above program.
+-   Indirect recursion : is the function that calls another function and then that function calls the calling function.
+**********************************************************************************************************************
++   Advantages of Recursive function :
+-   Less number code lines are used in the recursion program and hence the code looks shorter and cleaner.
+-   Recursion is easy to approach to solve the problems involving data structure and algorithms like graph and tree
+-   Recursion helps to reduce the time complexity 
+-   It helps to reduce unnecessary calling of the function
+-   It helps to solve the stack evolutions and prefix, infix, postfix evaluation
+-   Recursion is the best method to define objects that have repeated structural forms
++   Disadvantages of C++ Recursion
+-   It consumes a lot of stack space
+-   It takes more time to process the program
+-   If an error is accrued in the program, it is difficult to debug the error in comparison to the iterative program.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
